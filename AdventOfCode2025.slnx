@@ -3,4 +3,5 @@
   <Project Path="Day02/Day02.csproj" />
   <Project Path="Day03/Day03.csproj" />
   <Project Path="Day04\Day04.csproj" Type="Classic C#" />
+  <Project Path="Day05\Day05.csproj" Type="Classic C#" />
 </Solution>
