@@ -2,6 +2,7 @@
   <Project Path="Day01/Day01.csproj" />
   <Project Path="Day02/Day02.csproj" />
   <Project Path="Day03/Day03.csproj" />
-  <Project Path="Day04\Day04.csproj" Type="Classic C#" />
-  <Project Path="Day05\Day05.csproj" Type="Classic C#" />
+  <Project Path="Day04\Day04.csproj" />
+  <Project Path="Day05\Day05.csproj" />
+  <Project Path="Day06/Day06.csproj" Id="947f2765-d020-4391-be50-376345e8c7a4" />
 </Solution>
