@@ -65,7 +65,7 @@ HashSet<Point> FindSplitters(string[] input)
 	return result;
 }
 
-record class Node
+class Node
 {
 	bool _counted;
     long? _paths;
