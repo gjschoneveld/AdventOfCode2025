@@ -7,5 +7,6 @@
   <Project Path="Day06/Day06.csproj" />
   <Project Path="Day07/Day07.csproj" />
   <Project Path="Day08/Day08.csproj" />
-  <Project Path="Day09\Day09.csproj" Type="Classic C#" />
+  <Project Path="Day09\Day09.csproj" />
+  <Project Path="Day10/Day10.csproj" Id="96210622-e6f2-4705-8020-04e2eca6ee55" />
 </Solution>
