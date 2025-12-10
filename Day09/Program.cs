@@ -92,14 +92,24 @@ Dictionary<long, long> CreateMap(List<Point> points, Func<Point, long> selector)
 
 bool HasOtherTile(HashSet<Point> otherTiles, Point a, Point b)
 {
-    for (long x = Math.Min(a.X, b.X); x <= Math.Max(a.X, b.X); x++)
+    var minX = Math.Min(a.X, b.X);
+    var maxX = Math.Max(a.X, b.X);
+    var minY = Math.Min(a.Y, b.Y);
+    var maxY = Math.Max(a.Y, b.Y);
+
+    for (long x = minX; x <= maxX; x++)
     {
-        for (long y = Math.Min(a.Y, b.Y); y <= Math.Max(a.Y, b.Y); y++)
+        if (otherTiles.Contains((x, minY)) || otherTiles.Contains((x, maxY)))
         {
-            if (otherTiles.Contains((x, y)))
-            {
-                return true;
-            }
+            return true;
+        }
+    }
+
+    for (long y = minY; y <= maxY; y++)
+    {
+        if (otherTiles.Contains((minX, y)) || otherTiles.Contains((maxX, y)))
+        {
+            return true;
         }
     }
 
